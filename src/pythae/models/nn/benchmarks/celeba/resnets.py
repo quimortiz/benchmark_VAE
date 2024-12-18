@@ -87,6 +87,8 @@ class Encoder_ResNet_AE_CELEBA(BaseEncoder):
     def __init__(self, args: BaseAEConfig):
         BaseEncoder.__init__(self)
 
+        self.args = args
+
         self.input_dim = (3, 64, 64)
         self.latent_dim = args.latent_dim
         self.n_channels = 3

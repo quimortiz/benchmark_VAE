@@ -92,6 +92,7 @@ class VAE(BaseAE):
             loss=loss,
             recon_x=recon_x,
             z=z,
+            mu=mu
         )
 
         return output
